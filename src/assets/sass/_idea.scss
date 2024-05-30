@@ -1,0 +1,42 @@
+/*Стили для idea*/
+.idea {
+    margin-bottom: 80px;
+
+    .row {
+        @media screen and (max-width: $lg) {
+            row-gap: 20px;
+        }
+    }
+
+    .idea__card {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    
+        img {
+            max-width: 100%;
+            height: 208px;
+        }
+
+        .idea__card-name {
+            font-weight: 500;
+            font-size: 20px;
+            margin: 24px 0 24px;
+
+            @media screen and (max-width: 1199px) {
+                font-size: 16px;
+                margin: 10px 0 5px;
+            }
+        }
+
+        h2 {
+            margin-bottom: 54px;
+            text-align: center;
+        }
+
+    }
+}
+
+/*Конец Стили для idea*/

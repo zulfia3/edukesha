@@ -1,0 +1,115 @@
+/*Стили для главного блока*/
+.promo {
+    margin-bottom: 80px;
+
+    .row {
+        align-items: center;
+    }
+
+    p {
+        color: var(--gray);
+        margin-bottom: 19px;
+
+        @media screen and (max-width: $md) {
+            font-size: 16px;
+            line-height:23.4 px;
+        }
+
+        @media screen and (max-width: $lg) {
+            br{
+                display: none;
+            }
+        }
+    }
+    
+
+    .promo__start {
+        @media screen and (max-width: $lg) {
+            margin-bottom: 30px;
+        }
+
+        .promo__start-button {
+            display: flex;
+            gap: 20px;
+
+            @media screen and (max-width: $lg) {
+                width: 100%;
+            }
+
+
+            @media screen and (max-width: $lg) {
+                flex-direction: column;
+                width: 100%;
+                gap: 8px;
+                margin-bottom: 30px;
+            }
+
+            @media screen and (max-width: $md) {
+                margin-bottom: 30px;
+            }
+
+            .button-primary {
+
+                @media screen and (max-width: $sm) {
+                    margin-right: 0;
+                    margin-bottom: 8px;
+                }
+            }
+
+            .button-primary-outline {
+                font-size: 16px;
+                padding: 14px 30px;
+                border-radius: 10px;
+                background: none;
+                color: var(--purple);
+
+                span {
+                    position: relative;
+                    margin-right: 30px;
+
+
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 20px;
+                        height: 20px;
+                        background: url('/see.svg') center no-repeat;
+                    }
+                }
+            }
+        }
+    }
+
+    .promo__img {
+        .promo__img-first {
+            border-radius: 10px;
+            width: 100%;
+            box-shadow: var(--boxshadow);
+
+            @media screen and (max-width: $lg) {
+                width: 720px;
+                display: block;
+            }
+
+            @media screen and (max-width: $md) {
+                display: none;
+            }
+        }
+
+        .promo__img-mob {
+            display: none;
+
+            @media screen and (max-width: $md) {
+                display: block;
+                box-shadow: var(--boxshadow);
+                border-radius: 10px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+/*Конец Стили для главного блока*/

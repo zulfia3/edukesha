@@ -1,0 +1,35 @@
+/*Стили для history*/
+.history {
+    margin-bottom: 80px;
+
+    .row {
+        align-items: center;
+
+    }
+
+    @media screen and (max-width: $xl) {
+        margin-bottom: 60px;
+    }
+
+    .history__img {
+        img{
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: var(--boxshadow);
+    }
+}
+
+    .history__start {
+        @media screen and (max-width: $lg) {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+        }
+        p{
+            margin-top: 20px;
+        }
+    }
+}
+/*Конец Стили для history*/
